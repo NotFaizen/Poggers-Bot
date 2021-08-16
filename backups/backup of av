@@ -1,0 +1,9 @@
+module.exports = ({
+  name: "avatar",
+  aliases: ['av', 'pfp'],
+  code: `
+  $title[$username[$findMember[$message]]'s avatar]
+  $addField[Download links:;[png]($replaceText[$userAvatar[$findMember[$message]];webp;png;-1]) | [jpg]($replaceText[$userAvatar[$findMember[$message]];webp;jpg;-1]) | [jpeg]($replaceText[$userAvatar[$findMember[$message]];webp;jpeg;-1]) | [gif]($replaceText[$userAvatar[$findMember[$message]];webp;gif;-1])
+  $image[$userAvatar[$findMember[$message]]]
+  $color[$getRoleColor[$highestRole[$findMember[$message]]]]`
+})

@@ -1,0 +1,16 @@
+module.exports = ({
+  name: "bal",
+  code: `
+ $title[$username[$mentioned[1;yes]]'s balance] 
+ $thumbnail[$userAvatar[$mentioned[1;yes]]]
+ $description[
+
+ 💵 | **Wallet:** $getServerVar[symbol]$getGlobalUserVar[Money;$mentioned[1;yes]] 
+
+ 💰 | **Bank:** $getServerVar[symbol]$getGlobalUserVar[bank;$mentioned[1;yes]]
+
+ 💳 | **Net worth:** $getServerVar[symbol]$sum[$getGlobalUserVar[Money;$mentioned[1;yes]];$getGlobalUserVar[bank;$mentioned[1;yes]]]
+ ]
+ $color[RANDOM] 
+ $footer[You can use the other economy commands for more money] `
+})
