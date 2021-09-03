@@ -17,5 +17,12 @@ module.exports = {
   no: "❌",
   yes: "✅",
   nah: "<a:crossNo:871043625637789696>",
-  yeah: "<a:tickGreen:863376434487492659>"
+  yeah: "<a:tickGreen:863376434487492659>",
+  channel_snipe: "",
+  author_snipe: "",
+  icon_snipe: "",
+  message_snipe: "",
+  msgEditorID: "undefined",
+  esnipeOldMsg: "undefined",
+  commandCount: "0"
 }

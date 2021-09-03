@@ -39,14 +39,12 @@ bot.command({
   $onlyFOrIDs[$getVar[faizenAlt];]`
 })
 
-// shit i need to define to make life easier
-
-
-/* TODO:
-* make auto-meme
-* make neko slash command
-* make meme slash command
-*/
 bot.onJoined()
 bot.onInteractionCreate()
+bot.onMessageDelete()
 
+bot.command({
+  name: "yeet",
+  aliases: "sabakunogaara",
+  code: `$replaceText[$getServerVar[prefix];#SEMI#;#SEMI#]`
+})
