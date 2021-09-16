@@ -17,7 +17,7 @@ const Aoijs = require("aoi.js")
 const bot = new Aoijs.Bot({
   token: process.env.TOKEN, //Discord Bot Token
   prefix: ["$getServerVar[prefix]","<@!$ClientID>","<@$ClientID>"],
-  autoUpdate: true,
+  autoUpdate: false,
   suppressAll: false
 })
 
@@ -46,5 +46,45 @@ bot.onMessageDelete()
 bot.command({
   name: "yeet",
   aliases: "sabakunogaara",
-  code: `$replaceText[$getServerVar[prefix];#SEMI#;#SEMI#]`
+  code: `$replaceText[$getServerVar[prefix];#SEMI#;#SEMI#;-1]`
 })
+
+bot.command({
+name:'test',
+code:`$djsEval[(async () => {
+try {
+const Discord = require('discord.js');
+const leaf = require("leaf-utils");
+
+let embed1 = new Discord.MessageEmbed()
+.setTitle('p1')
+.setDescription('p1');
+
+let embed2 = new Discord.MessageEmbed()
+.setTitle('Help list')
+.setDescription('MODERATION\nban, kick, mute, unmute, unban, warn, checkwarn, clearwarn, unban, slowmode, +role, -role, role, purge, lock, unlock, setnick, massmute');
+
+let embed3 = new Discord.MessageEmbed()
+.setTitle('page3')
+.setDescription('page3');
+
+let pages = [embed1, embed2, embed3] 
+
+leaf.buttonpages(client, message, pages, {
+  firstEmoji: ':rewind:',
+  backEmoji: ':arrow_backward:', 
+  delEmoji: ':wastebasket:', 
+  forwardEmoji: ':arrow_forward:', 
+  lastEmoji: ':fast_forward:',
+  
+  btncolor: 'green', 
+  delcolor: 'red',
+  skipcolor: 'blurple', 
+  skipBtn: true
+})
+} catch (err) {
+message.channel.send(err)
+console.log(err)
+}
+})()]`
+});

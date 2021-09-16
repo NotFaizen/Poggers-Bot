@@ -1,0 +1,5 @@
+core
+json.sqlite
+database/
+views/
+package-lock.json

@@ -1,3 +1,8 @@
+const discord = require('discord.js')
+const client = new discord.Client()
+
+const { MessageButton, MessageActionRow } = require('discord-buttons')
+
 module.exports = ({
   name: "eval",
   error: `\`\`\`$error\`\`\``,

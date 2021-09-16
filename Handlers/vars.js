@@ -24,5 +24,6 @@ module.exports = {
   message_snipe: "",
   msgEditorID: "undefined",
   esnipeOldMsg: "undefined",
-  commandCount: "0"
+  commandCount: "0",
+  zerotwo: "752565851948974100"
 }

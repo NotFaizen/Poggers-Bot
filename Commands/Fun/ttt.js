@@ -3,7 +3,7 @@ module.exports = ({
   name: "tictactoe",
   aliases: ['ttt'],
   code: `
-  $djsEval[(async => { const opponent = message.mentions.users.first();
+  $djsEval[(async => () { const opponent = message.mentions.users.first();
   const { TicTacToe } = require('weky')
   await TicTacToe({
     message: message,

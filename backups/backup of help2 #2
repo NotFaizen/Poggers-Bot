@@ -1,0 +1,14 @@
+module.exports = ({
+name: "halp",
+code: `$title[Commands List!]
+$description[The prefix for Poggers Bot is \`$getServerVar[prefix]\`. You can do \`$getServerVar[prefix]help <category>\` to get more info on a command]
+$djseval[//fields]
+$addField[$get[intermoji] | Interactions;\`$get[pref]help interaction\`]
+$addField[$get[miscmoji] | Miscellaneous;\`$get[pref]help misc\`]
+$addField[$get[utilmoji] | Utility;\`$get[pref]help util\`]
+$addField[$get[imgmoji] | Image;\`$get[pref]help image\`]
+$addField[$get[modmoji] | Moderation;\`$get[pref]help mod\`]
+$addField[$get[econmoji] | Economy;\`$get[pref]help econ\`]
+$addField[$get[funmoji] | Fun;\`$get[pref]help fun\`]
+$color[$getUserVar[embedColor]]
+$footer[Made by $usertag[$botownerid] and $usertag[$getvar[sohpie]] <3]

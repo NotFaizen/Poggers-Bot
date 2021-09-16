@@ -1,34 +1,30 @@
 module.exports = ({
-  name: "halp",
-  aliases: ['wut', '?', 'nani'],
-  code: `
-  $title[Commands List!]
-  $description[The prefix for Poggers Bot is \`$getServerVar[prefix]\`. You can do \`$getServerVar[prefix]help <category>\` to get more info on a command.
+name: "halp",
+code: `
+$djseval[// embed setup
+const { MessageEmbed } = require('discord.js')
+let embed = new MessageEmbed()
+.setTitle("Commandlist for Poggers Bot")
+.setDescription("The prefix for Poggers Bot is \`$getServerVar[prefix]\`. You can do \`$getServerVar[prefix]help <category>\` to get more info on a command")
+.addField("$get[funmoji] | Fun", "\`$get[pref]help fun\`")
+.addField("$get[econmoji] | Economy", "\`$get[pref]help econ\`")
+.addField("$get[modmoji] | Moderation", "\`$get[pref]help mod\`")
+.addField("$get[imgmoji] | Image", "\`$get[pref]help image\`")
+.addField("$get[utilmoji] | Utility", "\`$get[pref]help util\`")
+.addField("$get[miscmoji] | Miscellaneous", "\`$get[pref]help misc\`")
+.addField("$get[intermoji] | Interactions", "\`$get[pref]help interaction\`")
+.setFooter("Made by $usertag[$botownerid] and $usertag[744570131199426570] <3")
+.setColor("$getUserVar[embedColor]")
+message.channel.send(embed)]
 
-  **😁 | Fun**
-  \`$getServerVar[prefix]help fun\`
 
-  **💸 | Economy**
-  \`$getServerVar[prefix]help econ\`
-
-  **🛠️ | Moderation**
-  \`$getServerVar[prefix]help mod\`
- 
-  **:frame_photo: | Image Generation**
-  \`$getServerVar[prefix]help image\`
-
-  **⚙️ | Utility**
-  \`$getServerVar[prefix]help other\`
-
-  **🤔 | Misc**
-  \`$getServerVar[prefix]help misc\`
-
-  **👊 | Interaction commands**
-  \`$getServerVar[prefix]help interaction\`
-]
-$color[$getUserVar[embedColor]]
-
-$footer[$randomText[DM $userTag[$botOwnerID] or $userTag[744570131199426570] if you spot any bugs;Made by $userTag[$botOwnerID] and $usertag[744570131199426570]] <3]
-$onlyIf[$message==;]
-$onlyForIDs[$botOwnerID;$getVar[sophie];$getVar[faizenAlt];{title:❌ Access denied ❌}{description:This command is still under testing, once finished it'll replace the current help command}{footer:Yeet}{color:RED}]`
+$djseval[//local vars]
+$let[pref;$getServerVar[prefix]]
+$let[intermoji;<a:Bonk_PopCat:838341333004845066>]
+$let[miscmoji;<:Aqua_bored:780758067238141952>]
+$let[utilmoji;<a:geary:838366449122672680>]
+$let[imgmoji;<a:Faizen_catJAM:823499334997377075>]
+$let[modmoji;<:robut_cop:854009645240418376>]
+$let[econmoji;<:dollarSign:883301944003809290>]
+$let[funmoji;<a:yay:770240939661983744>]`
 })
