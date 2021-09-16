@@ -2,11 +2,11 @@
 This is the source code for my discord bot [Poggers Bot](https://dsc.gg/poggers-bot). It is made using an npm package called [Aoi.JS](https://npmjs.org/package/aoi.js) meant to simplify discord bot development, and lots of other packages.
 
 ## Packages used
-- aoi.js =&gt [Click here](https://npmjs.org/package/aoi.js)
+- aoi.js => [Click here](https://npmjs.org/package/aoi.js)
 
-- discord.js =&gt [Click here](https://npmjs.org/package/discord.js)
+- discord.js => [Click here](https://npmjs.org/package/discord.js)
 
-- weky =&gt [Click here](https://npmjs.org/package/weky)
+- weky => [Click here](https://npmjs.org/package/weky)
 
 - simply-djs => [Click here](https://www.npmjs.com/package/simply-djs)
 
