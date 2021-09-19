@@ -3,7 +3,7 @@ module.exports = ({
 name: "help",
 code: `$if[$toLowercase[$message[1]]==fun]
 $title[Fun commands]
-$description[\`rps\`, \`say\`, \`clap\`, \`emojify\`, \`meme\`, \`doot\`, \`8ball\`, \`mock\`, \`ds\`, \`ttt\`, \`sudo\`, \`snake\`, \`owofy\`, \`advice\`, \`ss\`, \`whoasked\`]
+$description[\`rps\`, \`say\`, \`clap\`, \`emojify\`, \`meme\`, \`doot\`, \`8ball\`, \`mock\`, \`ds\`, \`ttt\`, \`sudo\`, \`snake\`, \`owofy\`, \`advice\`, \`ss\`, \`whoasked\`, \`connect4\`]
 $endif
 $if[$toLowerCase[$message]==econ]
 $title[Economy commands]
