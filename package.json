@@ -1,8 +1,9 @@
 {
-  "name": "Poggers Bot",
+  "name": "Poggers-Bot",
   "version": "1.0.0",
-  "description": "An epic discord bot",
+  "description": "An epic discord bot to fill all your needs and stuff idfk its private ok",
   "main": "index.js",
+  "repository": "https://github.com/NotFaizen/Poggers-Bot-2",
   "dependencies": {
     "aoi.js": "^4.4.4",
     "canvacord": "^5.2.1",

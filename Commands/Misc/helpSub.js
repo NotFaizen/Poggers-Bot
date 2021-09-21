@@ -24,7 +24,7 @@ $description[\`av\`, \`calc\`, \`setprefix\`, \`resetprefix\`, \`set-channel\`, 
 $endif
 $if[$toLowercase[$message[1]]==misc]
 $title[Miscellaneous commands]
-$description[\`help\`, \`pastebin\`, \`recog\`, \`npm\`, \`invite\`]
+$description[\`help\`, \`pastebin\`, \`recog\`, \`npm\`, \`colorinfo\`]
 $endif
 $if[$toLowercase[$message[1]==interaction]
 $title[Interaction commands]
