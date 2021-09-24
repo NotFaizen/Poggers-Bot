@@ -18,7 +18,7 @@ const bot = new Aoijs.Bot({
   token: process.env.TOKEN, //Discord Bot Token
   prefix: ["$getServerVar[prefix]","<@!$ClientID>","<@$ClientID>"],
   autoUpdate: false,
-  suppressAll: false
+  suppressAll: true
 })
 
 const buttons = require('discord-buttons')
@@ -88,3 +88,5 @@ console.log(err)
 }
 })()]`
 });
+
+// $parseDate[$djsEval[client.uptime;yes];time] //

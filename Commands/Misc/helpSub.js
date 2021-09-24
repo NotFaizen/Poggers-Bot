@@ -20,7 +20,7 @@ $description[\`bed\`, \`buttons\`, \`cat\`, \`clown\`, \`cmm\`, \`coffee\`, \`co
 $endif
 $if[$toLowercase[$message[1]]==util]
 $title[Utility commands]
-$description[\`av\`, \`calc\`, \`setprefix\`, \`resetprefix\`, \`set-channel\`, \`suggest\`, \`set-msg\`, \`set-welcome-channel\`, \`set-welcome-bg\`, \`embed-color\`]
+$description[\`av\`, \`calc\`, \`setprefix\`, \`resetprefix\`, \`set-channel\`, \`suggest\`, \`set-msg\`, \`set-welcome-channel\`, \`set-welcome-bg\`, \`embed-color\`, \`shorten\`]
 $endif
 $if[$toLowercase[$message[1]]==misc]
 $title[Miscellaneous commands]
