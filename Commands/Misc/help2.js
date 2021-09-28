@@ -1,5 +1,5 @@
 module.exports = ({
-name: "halp",
+name: "help",
 code: `
 $djseval[// embed setup
 const { MessageEmbed } = require('discord.js')
