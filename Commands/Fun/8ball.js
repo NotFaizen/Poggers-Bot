@@ -6,7 +6,7 @@ $title[🎱 The magic 8ball 🎱]
 $description[
 **Question:** $message
 
-**Answer:** $jsonRequest[https://gud-api.gofaizen.repl.co/fun/8ball;reponse;The API is down atm. DM $usertag[$botownerid] and tell him his API is down]
+**Answer:** $jsonRequest[https://gud-api.gofaizen.repl.co/fun/8ball;response;The API is down atm. DM $usertag[$botownerid] and tell him his API is down]
 $footer[Asked by $username;$authoravatar]
 $cooldown[5s;The magic 8ball needs %time% more to replenish it's magical energy]
 $color[$getUserVar[embedColor]]
