@@ -26,5 +26,7 @@ $let[utilmoji;<a:geary:838366449122672680>]
 $let[imgmoji;<a:Faizen_catJAM:823499334997377075>]
 $let[modmoji;<:robut_cop:854009645240418376>]
 $let[econmoji;<:dollarSign:883301944003809290>]
-$let[funmoji;<a:yay:770240939661983744>]`
+$let[funmoji;<a:yay:770240939661983744>]
+$djseval[//limiters]
+$onlyIf[$message==;]`
 })

@@ -3,3 +3,5 @@ json.sqlite
 database/
 views/
 package-lock.json
+node_modules/
+util.js

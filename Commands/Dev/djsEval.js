@@ -8,7 +8,8 @@ description: "Allows the bot owner to execute any discord.js code",
 usage: "$getServerVar[prefix]djseval <code>",
 error: `\`\`\`js
 $error\`\`\``,
-code: `  $addField[📤 Output 📤;\`\`\`js
+code: `
+$addField[📤 Output 📤;\`\`\`js
 $djseval[$message;yes]\`\`\`
 
 $addField[📥 Input 📥;\`\`\`js
