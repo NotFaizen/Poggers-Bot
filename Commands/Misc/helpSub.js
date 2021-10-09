@@ -7,7 +7,7 @@ $description[\`rps\`, \`say\`, \`clap\`, \`emojify\`, \`meme\`, \`doot\`, \`8bal
 $endif
 $if[$toLowerCase[$message]==econ]
 $title[Economy commands]
-$description[\`bal\`, \`set-symbol\`, \`beg\`, \`daily\`, \`weekly\`, \`dep\`, \`with\`, \`farm\`]
+$description[All economy commands were deprecated]
 $endif
 $if[$toLowercase[$message[1]]==mod]
 $title[Moderation commands]
