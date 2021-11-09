@@ -9,7 +9,7 @@ module.exports = {
   sophie: "744570131199426570",
   faizenAlt: "577009668266917937",
   user: "",
-  chatbot: "",
+  chatbot: "none",
   welcomeChannel: "",
   welcomeMsg: "{user.ping}, Welcome to the server!",
   welcomeBg: "https://cdn.discordapp.com/attachments/850033801581297755/863810314135011338/blob-scene-haikei.png",

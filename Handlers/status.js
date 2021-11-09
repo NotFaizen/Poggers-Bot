@@ -3,8 +3,7 @@ module.exports = {
   type: "PLAYING",
   status: "idle",
   time: 7
-} 
-module.exports = {
+}, {
   text: "over $allMembersCount mortals in $serverCount guilds",
   type: "WATCHING",
   status: "dnd",
