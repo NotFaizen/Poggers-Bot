@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/NotFaizen/Poggers-Bot-2",
   "dependencies": {
-    "aoi.js": "^4.5.0",
+    "aoi.js": "^4.6.0",
     "axios": "^0.22.0",
     "canvacord": "^5.2.1",
     "discord-buttons": "^4.0.0",
