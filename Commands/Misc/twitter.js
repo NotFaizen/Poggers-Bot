@@ -14,5 +14,6 @@ $addField[Friends;$getObjectProperty[friends];yes]
 $addField[Followers;$getObjectProperty[followers];yes]
 $addField[Location;$getObjectProperty[location];yes]
 $addField[Name;$getObjectProperty[name];yes]
-$color[BLUE] $createObject[$jsonRequest[https://api.popcat.xyz/twitter?q=$message]]`
+$color[BLUE] $createObject[$jsonRequest[https://api.popcat.xyz/twitter?q=$message]]
+$argsCheck[>1;I need a valid twitter username to get info on]`
 })

@@ -12,5 +12,6 @@ $addField[Followers;$getObjectProperty[followers];yes]
 $addField[Following;$getObjectProperty[following];yes]
 $addField[Username;$getObjectProperty[name];yes]
 $color[BLUE] $createObject[$jsonRequest[https://api.popcat.xyz/github/$uri[encode;$message]]
-$suppressErrors[{title:An error occurred}{description:This is most likely an internal error or the user doesn't exist} {color:RED}]`
+$suppressErrors[{title:An error occurred}{description:This is most likely an internal error or the user doesn't exist} {color:RED}]
+$argsCheck[>1;Provide a github user to search for (a valid one)]`
 })

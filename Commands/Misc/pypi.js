@@ -9,5 +9,6 @@ $addField[Repository;$replaceText[$getObjectProperty[repository];null;None];yes]
 $addField[Version;$getObjectProperty[version];yes]
 $addField[Author Email;$getObjectProperty[author_email];yes]
 $addField[Author;$getObjectProperty[author];yes]
-$color[BLUE] $createObject[$jsonRequest[https://gud-api.gofaizen.repl.co/misc/pypi?q=$message]]`
+$color[BLUE] $createObject[$jsonRequest[https://gud-api.gofaizen.repl.co/misc/pypi?q=$message]]
+$argsCheck[>1;Yes, PyPi search. Now enter the name of a package.]`
 }
