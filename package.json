@@ -13,6 +13,7 @@
     "discord.js": "^12.5.3",
     "djs-games": "^2.0.12",
     "express": "^4.17.1",
+    "got": "^11.8.3",
     "image-generation-for-discord": "^2.0.4",
     "mathjs": "^9.3.2",
     "node-fetch": "^2.6.1",

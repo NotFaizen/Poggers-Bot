@@ -12,7 +12,7 @@ async function getfromreddit(subreddit) {
 async function redditFetch(subreddit) {
   const res = await (await fetch(`https://www.reddit.com/r/${subreddit}/random/.json`)).json()
   const self = res[0].data.children[0].data
-  return { 
+  return {
     title: self.title,
     image: self.url,
     url: `https://${self.permalink}`,
@@ -22,8 +22,8 @@ async function redditFetch(subreddit) {
     downvotes: String(self.downs),
     comments: String(self.num_comments),
     upvote_ratio: String(self.upvote_ratio),
-    nsfw: self.over_18,
-    spoiler: self.spoiler
+    nsfw: String(self.over_18),
+    spoiler: String(self.spoiler)
   }
 }
 
@@ -31,7 +31,7 @@ async function replaceText(str, find, replace) {
   return str.replace(new RegExp(find, 'g'), replace);
 }
 
-async function numberSeparator(num,separator=", ") {
+async function numberSeparator(num,separator=",") {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator);
 }
 
@@ -42,11 +42,16 @@ async function jsonRequest(url, property) {
   return data[String(property)]
 }
 
+async function fileCount(path) {
+  const { readdirSync } = require("fs")
+  return readdirSync(path).length
+}
 module.exports = {
   randomText,
   replaceText,
   getfromreddit,
   redditFetch,
   jsonRequest,
+  fileCount
 }
 //["d3a625","eeba30","ae0001","740001","1a472a","2a623d","5d5d5d","aaaaaa","ecb939","f0c75e","726255","372e29","000000","0e1a40","222f5b","946b2d"]

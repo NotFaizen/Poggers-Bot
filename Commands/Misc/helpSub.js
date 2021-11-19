@@ -16,7 +16,7 @@ $endif
 $if[$toLowercase[$message[1]]==image]
 $djseval[//well fuck]
 $title[Image generation commands]
-$description[\`bed\`, \`buttons\`, \`cat\`, \`clown\`, \`cmm\`, \`coffee\`, \`comment\`, \`delete\`, \`dog\`, \`drake\`, \`eject\`, \`invert\`, \`lolice\`, \`neko\`, \`panik\`, \`petition\`, \`ph\`, \`pride\`, \`roblox\`, \`simpcard\`, \`trash\`, \`trigger\`, \`wasted\`, \`hitler\`, \`gun\`, \`trump\`, \`affect\`, \`stonks\`, \`unstonks\`, \`tweet\`, \`wide\`, \`scroll\`, \`drip\`, \`mc\`, \`cr\`, \`rip\`, \`billy\`, \`ad\`, \`fear\`, \`pablo\`, \`overlay\`, \`god\`, \`oogway\`, \`communism\`, \`wanted\`, \`sadcat\`, \`throw\`]
+$description[\`bed\`, \`buttons\`, \`cat\`, \`clown\`, \`cmm\`, \`coffee\`, \`comment\`, \`delete\`, \`dog\`, \`drake\`, \`eject\`, \`invert\`, \`lolice\`, \`neko\`, \`panik\`, \`petition\`, \`ph\`, \`pride\`, \`roblox\`, \`simpcard\`, \`trash\`, \`trigger\`, \`wasted\`, \`hitler\`, \`gun\`, \`trump\`, \`affect\`, \`stonks\`, \`unstonks\`, \`tweet\`, \`wide\`, \`scroll\`, \`drip\`, \`mc\`, \`cr\`, \`rip\`, \`billy\`, \`ad\`, \`fear\`, \`pablo\`, \`overlay\`, \`god\`, \`oogway\`, \`communism\`, \`wanted\`, \`sadcat\`, \`throw\`, \`adios\`]
 $endif
 $if[$toLowercase[$message[1]]==util]
 $title[Utility commands]
